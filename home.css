@@ -1,40 +1,55 @@
 body{
-    background-color: rgb(148, 227, 241);
+    background-color: #FFF8EA;
+}
+
+nav{
+    text-transform: uppercase;
+    border-bottom: 2px solid #594545bd;
+    padding: 5px 0;
+    font-family: Teko;
+    font-size: 21px;
+    color: #382c2c;
 }
 
 h1{
     text-align: center;
-    font-weight:normal;
-    text-decoration: underline;
-    color:rgb(11, 25, 156);
-    background-color: beige;
-    font-family:Verdana, Geneva, Tahoma, sans-serif; 
-    border-style:inset;
-    border-color:purple;
+    font-weight:500;
+    /*text-decoration: underline;*/
+    color:#594545;
+    background-color:#FFF8EA;
+    font-family:Cinzel, sans-serif; 
+    border-style:double;
+    border-color:#594545;
     border: width 1px;
+    width: 600px;
 }
-h2{
-    text-align: center;
-    font-size:xx-large;
-    font-weight: 600;
-    color: rgb(137, 137, 182);
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
+
 img{
     width: 230px;
     height: 300px;
+    border-radius: 20px;
 }
 h2{
-    text-align: left;
-    font-family: 'Times New Roman', Times, serif;
+    text-align:center;
+    font-family:Cormorant Garamond;
+    background-color:#594545;
     border-style:solid;
-    border-color: black;
-    border-width: 1px;
-    width: 1000px;
+    width: 500px;
+    align-self: center;
+    color:#FFF8EA;
+    padding:0.1em 0.1em;
+
 }
 h4{
     text-align:left;
-    font-size: small;
-    color:rgb(99, 42, 165);
-    font-family: Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 25px;
+    color:#856363;
+    font-weight:bold;
+    font-family: Tangerine, sans-serif;
+    line-height:5px;
+}
+
+h3{
+    font-family: Cinzel;
+    color: #382c2c;
 }
