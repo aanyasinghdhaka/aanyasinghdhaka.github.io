@@ -30,7 +30,7 @@
            <div class="row">
             <div class="header-text">
                 <p>Web Developer</p>
-                <h1>Hi, I'am <span>Aanya</span> Singh Dhaka</h1>
+                <h1>Hi, I'am <span class="auto-type"></span></h1>
             </div>
             <div class="imagemain">
                 <img src="lee-campbell-DtDlVpy-vvQ-unsplash.jpg" >
@@ -255,7 +255,16 @@
         .catch(error => console.error('Error!', error.message))
     })
   </script>
+<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
 
+<script>
+    var typed = new Typed(".auto-type",{
+        strings: ["Aanya Singh Dhaka"],
+        typeSpeed: 150,
+        backSpeed: 150,
+        loop:true
+    })
+</script>
     
 
 </body>
