@@ -1,91 +1,262 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="home.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Cormorant+Garamond:ital,wght@1,600&family=Tangerine:wght@700&family=Teko:wght@600&display=swap" rel="stylesheet">
-
-     <nav>Porfolio/Page</nav>
-    <title> Welcome to the website</title>
-    <a href="https://www.linkedin.com/in/aanya-singh-dhaka-969585249/">Contact me</a>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Personal Website</title>
+    <script src="https://kit.fontawesome.com/d016bc7d3c.js" crossorigin="anonymous"></script>
 </head>
-    <body>
-        <h1>Welcome to my website</h1>
-        <h2>MY NAME IS AANYA SINGH DHAKA</h2>
-        <h3>I am a freshmen i am doing my bachelors in technology in IT field</h3>
-        <p>yo something something something bla bla bla hehehehe </p>
-        <img src="IMG-20221123-WA0083.jpg" alt="me">
 
-    <div2>  <h2>Education</h2>
-        <h3>Indira Gandhi Delhi Technical University for Women
-            Bachelor of Technology</h3>
-            <h4> BTech, Information Technology (2022 - 2026) </h4>
+<body>
+     <nav>
+                <img src="images/Black & White Minimalist Aesthetic Initials Font Logo - Copy.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#Header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#porfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i id="cross" class="fas fa-times"></i>
+
+                </ul>
+                <i id="bars" class="fas fa-bars" onclick="openmenu()"></i>
+
+            </nav>
+    <div id="Header">
+        <div class="container">
+           <div class="row">
+            <div class="header-text">
+                <p>Web Developer</p>
+                <h1>Hi, I'am <span>Aanya</span> Singh Dhaka</h1>
+            </div>
+            <div class="imagemain">
+                <img src="images/lee-campbell-DtDlVpy-vvQ-unsplash.jpg" >
+            </div>
+           </div>
+
+        </div>  
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/profile-pic (4).png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hey there! I'm Aanya Singh Dhaka, a passionate and enthusiastic freshman at IGDTUW (Indira Gandhi Delhi Technical University for Women) with a projected graduation year of '26. I am thrilled to share my journey and showcase my skills in the world of technology and problem-solving.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li>
+                                <span>WEB DEVELOPMENT</span><br>HTML, CSS, JAVASCRIPT
+                            </li>
+                            <li>
+                                <span>MACHINE LEARNING</span><br>Numpys, Pandas, Data Analysis
+                            </li>
+                            <li>
+                                <span>COMPETITIVE CODING</span><br>C++,C, Python
+                            </li>
+                            
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li>
+                                <span>June-Aug 2023</span><br>AI ML intern
+                            </li>
+                            <li>
+                                <span>July 2023</span><br>Content Writing
+                            </li>
+                        
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li>
+                                <span>2022-2026</span><br>Btech IT-Indira Gandhi Delhi Techincal University For Women
+                            </li>
+                            <li>
+                                <span>2020-2022</span><br>92.6% - Vivekanand School
+                            </li>
+                            <li>
+                                <span>2018-2020</span><br>95.8% - Presidium School
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id=" services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-lists">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Development</h2>
+                    <p>I find joy in crafting visually appealing and user-friendly websites. From frontend design to backend functionality, I love working with HTML, CSS, JavaScript, and various frameworks to bring ideas to life on the digital canvas.
+            
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-gear"></i>
+                    <h2>Machine Learning </h2>
+                    <p>The realm of machine learning fascinates me, as it allows me to explore the endless possibilities of artificial intelligence. I enjoy diving into data, building models, and discovering insights that can revolutionize the way we approach problems.
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-bug"></i>
+                    <h2>Coding </h2>
+                    <p>As a problem solver at heart, I participate in competitive coding challenges. It sharpens my logical thinking and helps me apply data structures and algorithms to devise efficient solutions.
+            
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="porfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+
+                <div class="work">
+                    <img src="images/image1project.jpg">
+                    <div class="layer">
+                        <h3>
+                            Twitter Sentiment Analysis Model</h3>
+                        <p>
+                            This sentiment analysis project aimed to predict the sentiment of tweets using the Sentiment140 dataset. The dataset was cleaned, and the text was transformed into numerical representations using the Bag-of-Words approach.
+                        </p>
+                        <a href="https://github.com/aanyasinghdhaka/AIMLMonth2023"><i class="fa-solid fa-up-right-from-square fa-fade"></i></a>
+
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/image2project.jpg">
+                    <div class="layer">
+                        <h3>Museum of Candy Web Page</h3>
+                        <p>
+                            This is a Web page made using html, css and Javascript
+                        </p>
+                        <a href="https://github.com/aanyasinghdhaka/Museumofcandy"><i class="fa-solid fa-up-right-from-square fa-fade"></i></a>
+
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/image3project.jpg">
+                    <div class="layer">
+                        <h3>Tribute Page</h3>
+                        <p>
+                            The tribute page dedicated to Marie Curie, a remarkable scientist who made groundbreaking contributions to the fields of physics and chemistry. Marie Curie, born Maria Skłodowska in 1867 in Warsaw, Poland, was a pioneering physicist and chemist.
+                        </p>
+                        <a href="https://aanyasinghdhaka.github.io/Tributepage.github.io/"><i class="fa-solid fa-up-right-from-square fa-fade"></i></a>
+
+                    </div>
+                </div>
+            </div>
+            <a href="" class="btn">See More</a>
+        </div>
+    </div>
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i>Dhakaanya10@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>xxx xxxx xxx</p>
+                    <div class="social-icon">
+                        <a href="https://www.linkedin.com/in/aanya-singh-dhaka"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/aanyasinghdhaka"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://twitter.com/dhakaanya10">
+                        <i class="fa-brands fa-twitter"></i></a>
+                    </div>
+                    <a href="images/AanyaSinghDhakaCV.pdf" download class="btn btn2">Download CV</a>
+
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg">
+                        
+                    </span>
+
+                </div>
+            </div>
+        </div>
         
-
-        <h3>Vivekanand School</h3>
-            <h4>Higher Secondary PCM  (2020 - 2022)</h4>
-
-        <h3>Presidium School</h3>
-            <h4>Secondary School (2017 - 2020)</h4>
-    </div2>
-    
-<div1> <h2>Experience</h2>
-<h3>Rotaract-Literacy team</h3>
-<h4>December 2022 - Present (4 months)<h4>
-
-<h3>Google Developer Student Clubs IGDTUW-Mentee</h3>
-<h4>January 2023 - Present (3 months)</h4>
-<h3>Desh Ke Mentor-Mentor</h3>
-<h4>January 2023 - Present (2 months)</h4>
-<h3>Rotary Club Delhi Shine-International Service</h3>
-<h4> February 2022 - Present (4 months)</h4>
-</div1>
-
-
-
-
-
-
-
-    <h2>Skills</h2> 
-        <table>
-            <thead>
-                <tr>
-                    <th>S.no</th>
-                    <th>Name</th>
-                    <th>Level</th>   
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>1</td>
-                    <td>Python</td>
-                    <td>Beginner</td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td>Java</td>
-                    <td>Beginner</td>
-                </tr>
-            </tbody>
-        </table>
-        <form>
-            <h3>Your opinion is valuable</h3>
-            <label for="suggestions">Suggestions</label>
-            <input type="text" name="suggestions" placeholder="Type here" id="suggestions">
-            <p>
-            <label for="email">Contact info</label>
-            <input type="email" placeholder="Email" name="email" id="email">
-            </p>
-            <button>Submit</button>
-
-        </form>
-
+    </div>
 
     
-    </body>
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for (tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+
+<script>
+    var sidemenu= document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right="0";
+    }
+    function closemenu(){
+        sidemenu.style.right="-400px";
+    }
+</script>
+
+  <script>
+    const scriptURL ='https://script.google.com/macros/s/AKfycbwTNGh9GFNVtjlqUXytuSt8eDbgV0I8sQ7J49whShNTovNYXKJdCc82fvB4f3RWiUOf/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg=document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML="Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML=""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+    
+
+</body>
 </html>
